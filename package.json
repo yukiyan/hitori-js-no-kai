@@ -8,5 +8,8 @@
     "type": "git"
   },
   "author": "yukiyan <wakayama0215@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^1.13.2"
+  }
 }
