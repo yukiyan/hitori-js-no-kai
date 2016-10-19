@@ -10,6 +10,7 @@
   "author": "yukiyan <wakayama0215@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "webpack-dev-server --content-base src --inline --hot",
     "lint": "eslint ./src/js"
   },
   "dependencies": {
