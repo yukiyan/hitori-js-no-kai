@@ -9,6 +9,9 @@
   },
   "author": "yukiyan <wakayama0215@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./src/js"
+  },
   "dependencies": {
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
