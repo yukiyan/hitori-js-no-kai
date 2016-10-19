@@ -2,7 +2,7 @@
   "name": "hitori-js-no-kai",
   "version": "0.0.1",
   "description": "hitori js no kai",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "repository": {
     "url": "ssh://git@github.com/yukiyan/hitori-js-no-kai.git",
     "type": "git"
