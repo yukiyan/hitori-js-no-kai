@@ -1,18 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Layout = props => <h1>{props.name} がやっていく {props.children}</h1>;
+class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: '' };
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-Layout.propTypes = {
-  name: React.PropTypes.string.isRequired,
-  children: React.PropTypes.string.isRequired,
-};
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
 
-Layout.defaultProps = {
-  children: 'これからずっとな',
-};
+  render() {
+    return (
+      <div>
+        <input
+          type="text"
+          placeholder="input your text"
+          value={this.state.value}
+          onChange={this.handleChange}
+        />
+      </div>
+    );
+  }
+}
 
 ReactDOM.render(
-  <Layout name="yukiyan" />,
+  <Layout />,
   document.getElementById('app')
 );
