@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Layout = () => <h1>やっていく</h1>;
+const Layout = props => <h1>{props.name} がやっていく</h1>;
 
 ReactDOM.render(
-  <Layout />,
+  <Layout name="yukiyan" />,
   document.getElementById('app')
 );
