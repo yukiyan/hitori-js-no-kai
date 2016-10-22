@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 
 
 class Layout extends React.Component {
-  static getVal(val) {
-    return `Will${val}`;
+  constructor() {
+    super();
+    this.name = 'Yukiyan';
   }
 
   render() {
     return (
-      <h1>It works!! {Layout.getVal(1)}!</h1>
+      <h1>It works!! {this.name}!</h1>
     );
   }
 
