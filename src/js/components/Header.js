@@ -10,13 +10,14 @@ const Header = (props) => {
   return (
     <div>
       <Title {...props} />
-      <input onChange={handleChange} />
+      <input value={props.title} onChange={handleChange} />
     </div>
   );
 };
 
 Header.propTypes = {
   changeTitle: React.PropTypes.func,
+  title: React.PropTypes.string,
 };
 
 export default Header;
