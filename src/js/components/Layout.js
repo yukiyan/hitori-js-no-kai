@@ -1,17 +1,10 @@
 import React from 'react';
+import Header from './Header';
 
-class Layout extends React.Component {
-  constructor() {
-    super();
-    this.name = 'Yukiyan';
-  }
-
-  render() {
-    return (
-      <h1>It works!! {this.name}!</h1>
-    );
-  }
-
-}
+const Layout = () => (
+  <div>
+    <Header />
+  </div>
+);
 
 export default Layout;
