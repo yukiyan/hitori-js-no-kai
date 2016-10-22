@@ -3,12 +3,8 @@ import Title from './Header/Title';
 
 const Header = props => (
   <div>
-    <Title title={props.title} />
+    <Title {...props} />
   </div>
 );
-
-Header.propTypes = {
-  title: React.PropTypes.string,
-};
 
 export default Header;
